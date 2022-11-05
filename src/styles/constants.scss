@@ -1,0 +1,25 @@
+$background: #181d27;
+$background-light: #1F2633;
+$primary: #E4643A;
+$primary-light: #E9805D;
+$controls-color: #E2E2E2;
+
+@mixin text-shadow {
+  text-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.4);
+}
+
+@mixin text-shadow-small {
+  text-shadow: 0.2vw 0.35vw 0 rgba(0, 0, 0, 0.4);
+}
+
+@mixin box-shadow {
+  box-shadow: 0.6vw 1vw 0 rgba(0, 0, 0, 0.4);
+}
+
+@mixin filter-shadow {
+  filter: drop-shadow(0.6vw 1vw 0 rgba(0, 0, 0, 0.4));
+}
+
+@mixin filter-shadow-small {
+  filter: drop-shadow(0.3vw 0.5vw 0 rgba(0, 0, 0, 0.4));
+}

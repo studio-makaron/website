@@ -1,27 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <slide1 />
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Slide1 from '@/components/Slide1.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
+    Slide1,
   },
 });
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "styles/constants";
+
+body {
+  background: linear-gradient($background-light, $background);
+  margin: 0;
+
+  .slide {
+    height: 100vh;
+  }
 }
 </style>
